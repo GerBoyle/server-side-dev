@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration Form</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="simpleCart.js"></script>
+		<script src="theme.js"></script>
+		<link rel="stylesheet" type="text/css" href="webform.css">
+		<script src="validate.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+	</head>
+
+
+
+	<body>
+		<div id="container2">
+	
+			<!-- clickable Logo -->
+			<a href="index.html"><p>Retro Toys</p></a>
+			
+			<!-- search input -->
+			<h2>Search:<br>
+			<input type="text" name="search" value=""></h2>
+			
+			<!-- navigation bar -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				<li><a href="#registration">Registration</a></li>
+				<li><a href="cart.html">Shopping Cart</a></li>
+			</ul>
+
+			<!-- Start of form -->
+			<form name="myForm">
+				<fieldset> 
+				
+					<legend>Personal information:</legend>	
+	
+					<!-- Name input -->
+					<p2>First Name:</p2> 
+					<input type="text" name="firstname" value="">
+					<p2>Last Name:</p2>
+					<input type="text" name="lastname" value="">
+					<br><br>
+	
+					<!-- Password input -->
+					<p2>Password:</p2>
+					<input type="password" name="password" id="password" >
+					<input type="password" name="confirm_password" id="confirm_password" >
+
+					<button type="submit" onclick="validatePassword()">Confirm</button>
+					<br><br>
+	
+					<!-- E mail address input -->
+					<p2>E mail address:</p2>
+					<input type="text" name="email" value="">
+					<br><br>
+	
+					<!-- date of birth input -->
+					<p2>Date of birth:</p2>
+					<input type="text" name="dob" value="">
+					<br><br>
+	
+					<!-- Gender select-->
+					<p2>Gender:</p2>
+					<input type="radio" name="male" value="male"><p2>male</p2>
+					<input type="radio" name="female" value="female"><p2>female</p2>
+					<br><br>
+				
+					<!-- Age input -->
+					<p2>Age Category:</p2>
+					<select id="s1" onchange="checkAge()">
+						<option value="10s">10 to 16 years</option>
+						<option value="20s">17 to 30 years</option>
+						<option value="30s">31 to 40 years</option>
+						<option value="40s">41 to 50 years</option>
+					</select>
+				
+					<!-- hidden panel -->
+					<div id="panel1">
+						<br>
+						<p2>Under 16's need a parent to order from this site.</p2>
+						<br><br>
+					</div>
+					<br><br>
+					
+					<!-- number of children input -->
+					<p2>Are you here to buy Retro Toys for your children?</p2>
+					<input type="checkbox" name="yes" onclick="numChild()" value="">Yes 
+					<input type="checkbox" name="no" value="">No
+	
+					<!-- hidden panel -->
+					<div id="panel2">
+						<br>
+							<p2>How Many children do you have?</p2>
+							<input type="text" name="children" value="">
+							<br><br>
+					</div>	
+					<br><br>
+				
+					<!-- submit button -->
+					<button onclick="validate()">Submit</button>
+					<br><br>
+				
+					<!-- reset button -->
+					<p2>Reset Form</p2>
+					<input type="reset">
+				
+				</fieldset>
+			</form>
+	
+	
+		</div>
+	</body>
+</html>

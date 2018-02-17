@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vintage Toy Car</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="../simpleCart.js"></script>
+		<script src="../theme.js"></script>
+		<link rel="stylesheet" type="text/css" href="../webform.css">
+		<script src="../validate.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+
+	<body>
+	  
+		<div id="container">
+		
+			<!-- clickable Logo -->
+			<a href="../index.html"><p>Retro Toys</p></a>
+			
+			<!-- search input -->
+			<h2>Search:<br>
+			<input type="text" name="search" value=""></h2>
+		
+			<!-- navigation bar -->
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				<li><a href="../registration.html">Registration</a></li>
+				<li><a href="../cart.html">Shopping Cart</a></li>
+			</ul>
+	  
+			<div class="col-md-6"><!--Column left-->
+						<legend>Vintage Toy Car</legend>
+						<img src="../images/vintage car.jpg" class="item_thumb" />		
+			</div>	
+			
+            <div class="col-md-6"><!--Column right-->
+				<span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+				<a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+				 
+				 
+				 <div class="simpleCart_shelfItem">
+					<p1 class="item_name"> Vintage Toy Car </p1><br>
+					<input type="text" value="1" size="5" class="item_Quantity">
+					<span class="item_price">50 euro</span><br>
+					<a class="item_add" href="javascript:;"> Add to Cart </a>
+				</div>
+				<br><br>
+				<a href="../cart.html"> Shopping Cart</a>
+				
+			</div>
+	
+			
+		</div>
+	</body>
+	
+</html>
